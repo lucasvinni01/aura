@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=VT323&display=swap');
+
+body {
+    font-family: 'Open sans', sans-serif;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #0c162c, #297E9B);
+}
+
+main {
+    padding: 1em;
+    margin: 2.5em 0;
+}
+
+.container_carrossel {
+    margin-bottom: 3em;
+}
+
+.slide img {
+    max-width: 100%;
+    display: block;
+    
+}
+
+.slide {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+}
+
+.slide-items {
+    position: relative;
+    grid-area: 1/1;
+}
+
+.slide-nav {
+    grid-area: 1/1;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.slide-items > * {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.slide-items > .active {
+    opacity: 1;
+    pointer-events: initial;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-thumb {
+    display: flex;
+    grid-column: 1 / 3;
+
+}
+
+.slide-thumb > span {
+    flex: 1;
+    display: block;
+    height: 4px;
+    background-color: #00000050;
+    margin: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.slide-nav button {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: #00000000;
+    opacity: 0;
+}
+
+.slide-thumb > span.active::after {
+    content: '';
+    display: block;
+    height: inherit;
+    background-color: #f8f8f8ab;
+    border-radius: 3px;
+    transform: translateX(-100%);
+    animation: thumb 6s forwards linear;
+}
+
+@keyframes thumb {
+    to {
+        transform: initial;
+    }
+}
+
+.populares-titulo {
+    font-size: 2.5em;
+    margin: 16px 0 32px;
+}
+
+.article_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.artigo-card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: #ffffff;
+    color: #0c162c;
+    box-shadow: 3px 5px 10px #0000004b;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+
+.artigo-card:hover {
+    transform: scale(1.1);
+}
+
+.artigo-imagem {
+    width: 350px;
+    height: 235px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.artigo_info {
+    padding: 16px;
+}
+
+.artigo_info-titulo {
+    text-align: center;
+    margin-bottom: 8px;
+}

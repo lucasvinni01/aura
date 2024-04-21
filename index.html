@@ -6,7 +6,9 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <script src="./slide-stories.js" defer></script>
     <title>Aura</title>
 </head>
 <body>
@@ -29,45 +31,56 @@
     </header>
     <main>
         <section class="container_carrossel">
-
+            <div class="slide" data-slide="slide">
+                <div class="slide-items">
+                    <img src="./assets/imagens/slide1.jpg" alt="imagem">
+                    <img src="./assets/imagens/slide2.jpg" alt="imagem">
+                    <img src="./assets/imagens/slide3.jpg" alt="imagem">
+                </div>
+                <nav class="slide-nav">
+                    <div class="slide-thumb"></div>
+                    <button class="slide-prev">Anterior</button>
+                    <button class="slide-next">Próximo</button>
+                </nav>
+            </div>
         </section>
         <section class="container_populares">
             <h1 class="populares-titulo">Em alta</h1>
-            <article class="artigo-card">
-                <img src="assets/imagens/frutas.jpg" alt="Imagem do artigo" class="artigo-imagem">
-                <div class="artigo_info">
-                    <h1 class="artigo_info-titulo">Guia Prático: Alimentação no Trabalho</h1>
-                    <p class="artigo_info-descricao">No ritmo acelerado do dia-a-dia no trabalho, é fácil
-                        negligenciar a importância de uma alimentação
-                        saudável no horário de almoço. No entanto, escolher os alimentos certos pode não só
-                        impulsionar sua
-                        produtividade, mas também sua saúde geral. Aqui está um guia dos melhores alimentos para o
-                        almoço no
-                        trabalho, com um ranking baseado em seus benefícios nutricionais e no impacto positivo que
-                        podem ter no
-                        seu desempenho e bem-estar:</p>
-                </div>
-            </article>
-
-            <article class="artigo-card">
-                <img src="assets/imagens/artigo5.jpg" alt="Imagem do artigo" class="artigo-imagem">
-                <div class="artigo_info">
-                    <h1 class="artigo_info-titulo">Burnout, como prevenir?</h1>
-                    <p class="artigo_info-descricao">O burnout é um estado de esgotamento físico, emocional e mental causado pela sobrecarga prolongada de estresse no trabalho. É uma resposta comum a condições de trabalho desafiadoras, sobrecarga de responsabilidades e falta de suporte emocional. Aqui está uma visão geral sobre o burnout, seus sinais, sintomas e estratégias para prevenção:</p>
-                </div>
-            </article>
-
-            <article class="artigo-card">
-                <img src="assets/imagens/artigo2.jpg" alt="Imagem do artigo" class="artigo-imagem">
-                <div class="artigo_info">
-                    <h1 class="artigo_info-titulo">Primeira Maratona Corporativa</h1>
-                    <p class="artigo_info-descricao">A Maratona Voluntária da Aura é um evento dedicado ao serviço
-                        comunitário, no qual os membros de nossa equipe corporativa se unem para dedicar seu tempo e
-                        energia a causas significativas. Durante esta maratona, estaremos colaborando com organizações
-                        sem fins lucrativos locais para realizar uma série de atividades voluntárias, desde ações
-                        ambientais até programas educacionais e de apoio social</p>
-                </div>
-            </article>
+            <div class="article_container">
+                <article class="artigo-card">
+                    <img src="assets/imagens/frutas.jpg" alt="Imagem do artigo" class="artigo-imagem">
+                    <div class="artigo_info">
+                        <h1 class="artigo_info-titulo">Guia Prático: Alimentação no Trabalho</h1>
+                        <p class="artigo_info-descricao">No ritmo acelerado do dia-a-dia no trabalho, é fácil
+                            negligenciar a importância de uma alimentação
+                            saudável no horário de almoço. No entanto, escolher os alimentos certos pode não só
+                            impulsionar sua
+                            produtividade, mas também sua saúde geral. Aqui está um guia dos melhores alimentos para o
+                            almoço no
+                            trabalho, com um ranking baseado em seus benefícios nutricionais e no impacto positivo que
+                            podem ter no
+                            seu desempenho e bem-estar:</p>
+                    </div>
+                </article>
+                <article class="artigo-card">
+                    <img src="assets/imagens/artigo5.jpg" alt="Imagem do artigo" class="artigo-imagem">
+                    <div class="artigo_info">
+                        <h1 class="artigo_info-titulo">Burnout, como prevenir?</h1>
+                        <p class="artigo_info-descricao">O burnout é um estado de esgotamento físico, emocional e mental causado pela sobrecarga prolongada de estresse no trabalho. É uma resposta comum a condições de trabalho desafiadoras, sobrecarga de responsabilidades e falta de suporte emocional. Aqui está uma visão geral sobre o burnout, seus sinais, sintomas e estratégias para prevenção:</p>
+                    </div>
+                </article>
+                <article class="artigo-card">
+                    <img src="assets/imagens/artigo2.jpg" alt="Imagem do artigo" class="artigo-imagem">
+                    <div class="artigo_info">
+                        <h1 class="artigo_info-titulo">Primeira Maratona Corporativa</h1>
+                        <p class="artigo_info-descricao">A Maratona Voluntária da Aura é um evento dedicado ao serviço
+                            comunitário, no qual os membros de nossa equipe corporativa se unem para dedicar seu tempo e
+                            energia a causas significativas. Durante esta maratona, estaremos colaborando com organizações
+                            sem fins lucrativos locais para realizar uma série de atividades voluntárias, desde ações
+                            ambientais até programas educacionais e de apoio social</p>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
     <footer class="footer_container">
