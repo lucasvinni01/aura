@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <title>Aura | Serviçis</title>
 </head>
 <body>
-    <header>
+    <header class="header_container">
         <div class="header_logo">
-            <a href="index.html"><img src="assets/imagens/Aura.png" alt="Logotipo Aura"></a>
+            <a href="index.html"><img src="assets/imagens/Aura.png"></a>   
             <div class="header_logo-text">
                 <h1>Aura</h1>
                 <h2>Pensando em você</h2>
@@ -19,7 +23,7 @@
                 <li><a href="sobrenos.html">Sobre nós</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li><a href="trabalheconosco.html">Trabalhe conosco</a></li>
-                <li><a href="#">Artigos</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
             </ul>
         </nav>
     </header>
@@ -54,16 +58,16 @@
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="footer_container">
         <section class="container_newsletter">
             <h1 class="newsletter-titulo">Assine nossa Newsletter</h1>
             <p class="newsletter-descricao">Fique por dentro de novidades em saúde corporativa</p>
             <form action="#" class="newsletter_form">
                 <input type="email" class="form-input" placeholder="Seu melhor email">
-                <button type="submit">Assinar</button>
+                <button type="submit" class="form-btn">Assinar</button>
             </form>
         </section>
-        <p class="footer_descricao">Em desenvolvimento</p>
+        <div class="footer_descricao"><p>Em desenvolvimento</p></div>
     </footer>
 </body>
 </html>
