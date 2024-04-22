@@ -18,13 +18,13 @@ main {
 
 .container_artigos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .artigo-card {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 350px;
     background-color: #D9D9D9;
     color: #0c162c;
@@ -36,7 +36,7 @@ main {
 }
 
 .artigo-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .artigo-imagem {
@@ -48,6 +48,10 @@ main {
 
 .artigo_info {
     padding: 16px;
+}
+
+.container_artigos a {
+    text-decoration: none;
 }
 
 .artigo_info-titulo {

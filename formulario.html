@@ -6,8 +6,9 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/formulario.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <title>Aura | Serviçis</title>
+    <title>Aura | Serviços</title>
 </head>
 <body>
     <header class="header_container">
@@ -28,9 +29,9 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1></h1>
-            <form action="#">
+        <section class="section_container">
+            <h1 class="section-titulo">Receba nosso orçamento</h1>
+            <form action="#" class="formulario_container">
                 <input type="text" name="empresa" id="empresa" placeholder="Nome da Empresa">
                 <input type="text" name="cnpj" id="cnpj" placeholder="CNPJ">
                 <input type="number" name="colaboradores" id="colaboradores" placeholder="Número de colaboradores">
@@ -55,6 +56,7 @@
                 <label for="promocional">Concorda em receber nossas promoções?
                     <input type="checkbox" name="promocional" id="promocional">
                 </label>
+                <button type="submit" class="servico-btn">Enviar</button>
             </form>
         </section>
     </main>
